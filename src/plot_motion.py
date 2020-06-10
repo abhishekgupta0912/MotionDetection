@@ -5,7 +5,6 @@ from src.script import df
 
 p = figure(x_axis_type="datetime", height=200, width=700, title="Motion Graph")
 p.yaxis.minor_tick_line_color = None
-# p.ygrid[0].ticker.desired_num_ticks = 1
 
 hover = HoverTool(tooltips=[("Start", "@START"), ("END", "@END")])
 p.add_tools(hover)
